@@ -1,0 +1,19 @@
+{
+  "Page": {
+    "description": "Hola"
+  },
+
+  "HomeSidebar": {
+    "career": "Desarrollador de software",
+    "description": "Diseño microservicios escalables y soluciones en la nube para un rendimiento óptimo.",
+    "programming-languages": "Lenguajes de programación",
+    "technologies": "Tecnologías",
+    "architecture-patterns": "Patrones de arquitectura",
+    "links": {
+      "about": "Sobre mí",
+      "experience": "Experiencia",
+      "projects": "Proyectos",
+      "education": "Educación"
+    }
+  }
+}

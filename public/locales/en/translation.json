@@ -1,0 +1,19 @@
+{
+  "Page": {
+    "description": "Hello"
+  },
+
+  "HomeSidebar": {
+    "career": "Software Developer",
+    "description": "I build scalable microservices and cloud solutions for optimized performance.",
+    "programming-languages": "Programming Languages",
+    "technologies": "Technologies",
+    "architecture-patterns": "Architecture Patters",
+    "links": {
+      "about": "About",
+      "experience": "Experience",
+      "projects": "Proyects",
+      "education": "Education"
+    }
+  }
+}

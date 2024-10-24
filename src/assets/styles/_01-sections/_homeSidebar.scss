@@ -1,0 +1,64 @@
+@use "../variables.scss" as *;
+
+.homeSidebar {
+  top: 0;
+  max-height: 100svh;
+  position: sticky;
+  max-width: 30rem;
+  padding: 6rem 0;
+
+  &__name {
+    font-size: clamp(2em, 5vw, 3em);
+  }
+
+  &__career {
+    color: $white;
+    font-size: 1.2em;
+    font-weight: 300;
+  }
+
+  &__description {
+    margin: 1rem 0;
+    font-size: 0.9em;
+    max-width: 25rem;
+    font-weight: 300;
+  }
+
+  &__tags {
+    margin-top: 2rem;
+  }
+
+  &__tagsList {
+    margin: 0.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  &__tag {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    padding: 0.2rem 1rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    font-size: 0.8em;
+
+    &:hover {
+      color: #0e172a;
+      transition: color 0.1s ease-in;
+    }
+  }
+}
+
+@each $tag, $color in $tag-colors {
+  .homeSidebar__tag--#{$tag} {
+    border: 1px solid $color;
+    color: $color;
+
+    &:hover {
+      background-color: $color;
+      transition: background-color 0.2s ease-in;
+    }
+  }
+}

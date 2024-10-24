@@ -1,0 +1,18 @@
+---
+---
+
+<div
+  class="light"
+  id="light"
+/>
+
+<script>
+  let html = document.documentElement;
+  let pos = document.getElementById("light");
+  html.addEventListener("mousemove", (e) => {
+    if (pos) {
+      pos.style.setProperty("--x", e.clientX + "px");
+      pos.style.setProperty("--y", e.clientY + "px");
+    }
+  });
+</script>
